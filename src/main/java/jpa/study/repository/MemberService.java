@@ -7,13 +7,14 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import jpa.study.domain.Member;
+import lombok.RequiredArgsConstructor;
 
 @Service
 @Transactional
+@RequiredArgsConstructor
 public class MemberService {
 
-	@Autowired // 자동 의존성 주입
-	private MemberRepository memberRepository;
+	private final MemberRepository memberRepository;
 
 	// 회원 가입
 	public Long join(Member member) {
