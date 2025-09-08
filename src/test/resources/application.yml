@@ -1,0 +1,20 @@
+#spring:
+#  datasource:
+#    url: jdbc:h2:mem:test
+#    username: sa
+#    password:
+#      driver-class-name: org.j2.Driver
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: create
+#    properties:
+#      hibernate:
+#        format_sql: true
+#        integration:
+#          envers:
+#            enabled: false
+
+logging:
+  level:
+    org.hibernate.SQL: debug
