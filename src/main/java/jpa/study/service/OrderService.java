@@ -13,6 +13,7 @@ import jpa.study.domain.item.Item;
 import jpa.study.repository.ItemRepository;
 import jpa.study.repository.MemberRepository;
 import jpa.study.repository.OrderRepository;
+import jpa.study.repository.OrderSearch;
 import lombok.RequiredArgsConstructor;
 
 @Service
@@ -59,9 +60,7 @@ public class OrderService {
 	}
 
 	// 검색
-	/*
 	public List<Order> findOrder(OrderSearch orderSearch) {
 		return orderRepository.findAll(orderSearch);
 	}
-	*/
 }
