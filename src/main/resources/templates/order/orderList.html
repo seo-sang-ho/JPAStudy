@@ -13,14 +13,14 @@
                 <div class="form-group mx-sm-1 mb-2">
                     <select th:field="*{orderStatus}" class="form-control">
                         <option value="">주문상태</option>
-                        <option th:each="status : ${T(jpabook.jpashop.domain.OrderStatus).values()}"
+                        <option th:each="status : ${T(jpa.study.domain.OrderStatus).values()}"
                                 th:value="${status}"
                                 th:text="${status}">option
                         </option>
                     </select>
                 </div>
+                <button type="submit" class="btn btn-primary mb-2">검색</button>
             </form>
-            <button type="submit" class="btn btn-primary mb-2">검색</button>
         </div>
         <table class="table table-striped">
             <thead>
@@ -57,12 +57,12 @@
 </div> <!-- /container -->
 </body>
 <script>
-function cancel(id) {
-var form = document.createElement("form");
-form.setAttribute("method", "post");
-form.setAttribute("action", "/orders/" + id + "/cancel");
-document.body.appendChild(form);
-form.submit();
-}
+    function cancel(id) {
+    var form = document.createElement("form");
+    form.setAttribute("method", "post");
+    form.setAttribute("action", "/orders/" + id + "/cancel");
+    document.body.appendChild(form);
+    form.submit();
+    }
 </script>
 </html>
