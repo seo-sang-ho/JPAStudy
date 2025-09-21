@@ -1,4 +1,4 @@
-package jpa.study.domain.controller;
+package jpa.study.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

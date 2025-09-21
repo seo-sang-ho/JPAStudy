@@ -1,4 +1,4 @@
-package jpa.study.domain.controller;
+package jpa.study.controller;
 
 import lombok.Getter;
 import lombok.Setter;

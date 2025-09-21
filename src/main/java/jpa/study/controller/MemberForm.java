@@ -1,4 +1,4 @@
-package jpa.study.domain.controller;
+package jpa.study.controller;
 
 import jakarta.validation.constraints.NotEmpty;
 import lombok.Getter;
