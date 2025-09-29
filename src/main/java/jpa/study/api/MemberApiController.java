@@ -1,4 +1,4 @@
-package jpa.study;
+package jpa.study.api;
 
 import jakarta.validation.Valid;
 import jpa.study.domain.Member;
